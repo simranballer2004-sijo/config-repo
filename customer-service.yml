@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: customer-service        # Microservice name for service registry
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/customer_master  # MySQL database URL
+    driverClassName: com.mysql.cj.jdbc.Driver        # JDBC driver class
+
+  jpa:
+    hibernate:
+      ddl-auto: none  # Do not auto-create/update tables
+    show-sql: false   # Disable printing SQL queries in logs
+
+    
