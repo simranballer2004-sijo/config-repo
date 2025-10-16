@@ -1,0 +1,25 @@
+#It’s just a simple key-value message to demonstrate shared/global config.
+global:
+  message: Welcome to Global Environment!
+
+#looging INFO at root level, for more detailed you can use DEBUG as well
+logging:
+  level:
+    root: INFO
+
+#Configure Eureka Client in Spring boot
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+#Management endpoints : Controls Spring Actuator endpoints
+management:
+  endpoint:
+    web:
+      exposure:
+        include: health, info, refresh
+
+  endpoint:
+    health:
+      show-details: always
