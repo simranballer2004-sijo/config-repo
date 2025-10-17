@@ -15,7 +15,7 @@ eureka:
 
 #Management endpoints : Controls Spring Actuator endpoints
 management:
-  endpoint:
+  endpoints:
     web:
       exposure:
         include: health, info, refresh
